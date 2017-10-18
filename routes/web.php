@@ -13,3 +13,10 @@
 
 Route::get('/', 'TipController@index');
 Route::get('/payment-amount', 'TipController@calculateAmountToPay');
+
+Route::get('/env', function () {
+    dump(config('app.name'));
+    dump(config('app.env'));
+    dump(config('app.debug'));
+    dump(config('app.url'));
+});
