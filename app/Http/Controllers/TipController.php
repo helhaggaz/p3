@@ -8,10 +8,12 @@ class TipController extends Controller
 {
     public function index()
     {
-      return 'Show the main page!!';
+      return view('tipCalculator.form');
+
     }
     public function calculateAmountToPay()
     {
-      return 'Show the final amount to pay';
+      return view('tipCalculator.payment');
+
     }
 }
